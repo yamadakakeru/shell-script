@@ -1,0 +1,5 @@
+[user]
+	name = yamadakakeru
+	email = yamada-kakeru@uni-com.com
+[pull]
+	rebase = false
