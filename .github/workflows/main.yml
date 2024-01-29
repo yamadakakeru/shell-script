@@ -1,8 +1,10 @@
+name: CI
+
 on: push
 
 jobs:
- happy:
-  runs-on: self-hosted
+  HelloWorld:
+    runs-on: self-hosted
 
-  steps:
-  - run: echo 'Hello World!'
+    steps:
+      - run: echo 'hello'
