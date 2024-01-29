@@ -1,7 +1,7 @@
 on: push
 
 jobs:
- hello:
+ happy:
   runs-on: self-hosted
 
   steps:
