@@ -3,11 +3,7 @@ on: push
 jobs:
   work:
   runs-on: self-hosted
-  steps:
-    - run: echo 'helloWold'
 
-      keep:
-        runs-on: self-hosted
-        steps:
-          - run: echo 'happy'
+  steps:
+    - run: echo 'Hello World'
     
