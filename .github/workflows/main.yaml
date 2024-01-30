@@ -1,12 +1,13 @@
-name: learn-github-actions
-on: [push]
+name: CI
+on: push
 jobs:
-  check-bets-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+  work:
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo 'helloWold'
+
+      keep:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo 'happy'
+    
