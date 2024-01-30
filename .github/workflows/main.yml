@@ -6,3 +6,10 @@ jobs:
 
     steps:
       - run: echo 'Hello World!'
+
+   work:
+    runs-on: self-hosted
+    needs: hello
+
+    steps:
+      - run: echo 'Happy'
