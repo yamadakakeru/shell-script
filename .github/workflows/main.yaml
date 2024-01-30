@@ -2,7 +2,7 @@ name: CI
 on: push
 jobs:
   work:
-  runs-on: selhosted
+  runs-on: self-hosted
   steps:
     - run: echo 'helloWold'
 
