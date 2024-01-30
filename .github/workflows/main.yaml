@@ -8,5 +8,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: mpm install -g bats
+      - run: npm install -g bats
       - run: bats -v
