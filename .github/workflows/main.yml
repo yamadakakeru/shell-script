@@ -6,3 +6,12 @@ jobs:
 
     steps:
       - run: echo 'Hello World'
+
+
+        work:
+          runs-on: self-hosted
+          needs: hello
+          if: ${{ needs.hello.result == 'success' }}
+
+          steps:
+            - run: echo 'happy'
