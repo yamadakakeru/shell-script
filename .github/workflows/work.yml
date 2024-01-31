@@ -1,8 +1,12 @@
-on: push
+name: time
 
-jobs:
-  hello:
-    runs-on: self-hosted
+on:
+  schedule:
+    - cron: "0 5,23 * * 1"
 
-    steps:
-      - run: echo 'Hello World!'
+      jobs:
+        time:
+          runs-on: self-hosted
+
+          steps:
+            - run: echo 'Hello World'
