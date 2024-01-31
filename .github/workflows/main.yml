@@ -15,3 +15,11 @@ jobs:
 
     steps:
       - run: echo 'happy'
+
+  keep:
+   runs-on: self-hosted
+   needs: work
+   if: ${{ needs.hello.result == 'success' }}
+
+   steps:
+     - run: echo 'match'
