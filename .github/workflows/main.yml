@@ -1,17 +1,10 @@
-on: push
+name: sample
 
+on: push
+  
 jobs:
   hello:
     runs-on: self-hosted
 
     steps:
       - run: echo 'Hello World!'
-
-
-  work:
-    runs-on: self-hosted
-    needs: hello
-    if: ${{ needs.hello.result == 'success' }}
-
-    steps:
-      - run: echo 'happy'
