@@ -1,8 +1,8 @@
-name: sample3
-
 on: push
+
 jobs:
-    work:
-      runs-on: self-hosted
-steps:
-  - run: echo 'happy'
+  hello:
+    runs-on: self-hosted
+
+    steps:
+      - run: echo 'Hello World'
