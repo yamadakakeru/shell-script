@@ -1,9 +1,6 @@
 name: sample
 
-on:
-  schedule:
-    - cron: '*/10 * * * *'
-      workflow_disapatch:
+on: push
 
         jobs:
           test:
