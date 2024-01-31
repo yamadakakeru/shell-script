@@ -1,0 +1,8 @@
+name:
+  on:
+    workflow_dispatch:
+      jobs:
+        echo:
+          uses: my-org/repo1/.github/workflows/echo.yml@main
+          with:
+            msg: hoge!
