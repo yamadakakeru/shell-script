@@ -1,9 +1,12 @@
-name: test
+name: sample
 
-on: push
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+      workflow_disapatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Hello"
+        jobs:
+          test:
+            runs-on: ubuntu-latest
+            steps:
+              - run: echo "hello"
