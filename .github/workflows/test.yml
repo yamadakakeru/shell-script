@@ -1,9 +1,10 @@
 name: sample
 
-on: push
+ on: push
 
-        jobs:
-          test:
-            runs-on: self-hosted
-            steps:
-              - run: echo "hello"
+ jobs:
+   work:
+     runs-on: self-hosted
+
+     steps:
+       - run: echo 'happy'
