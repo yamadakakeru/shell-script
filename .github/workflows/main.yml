@@ -1,7 +1,8 @@
 on: push
 
 jobs:
-  runs-on: self-hosted
+  hello:
+    runs-on: self-hosted
 
-  steps:
-    - run: echo "Hello"
+    steps:
+      - run: echo 'Hello World'
