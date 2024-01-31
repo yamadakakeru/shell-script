@@ -1,25 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
 name: CI
 
+  # Controls when the workflow will run
 on:
   push:
     branches: [ "main" ]
     pull_request:
-      branches: [ "main" ]
+       branches: [ "main" ]
 
-      workflow_dispatch:
-
-        jobs:
-          build: 
-          runs-on: ubuntu-latest
-        
-          steps:
-
-              - uses: actions/checkout@v3
-
-              - name: Run a one-line script
-                run: echo Hello, world!
-
-              - name: Run a multi-line script
-                run: |
-                  echo Add other actions to build,
-                  echo test, and depoy your project.
+          workflow_dispatch:
+            jobs:
+               build:
+                 runs-on: ubuntu-latest
+                 steps:
+                    - uses: actions/checkout@v3
+                    - name: Run a one-line script
+                       run: echo Hello, world!
+                          - name: Run a multi-line script
+                            run: |
+                              echo Add other actions to build,
+                              echo test, and deploy your project.
+                            hoge:
+                              runs-on: ubuntu-latest
+                                    steps:
+                                            - name: Hoge Step
+                                                      run: echo Hoge World!!
