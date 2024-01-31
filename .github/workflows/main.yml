@@ -7,11 +7,3 @@ jobs:
     steps:
       - run: echo 'Hello World'
 
-
-        sample:
-          runs-on: self-hosted
-          needs: hello
-          if: ${{ needs.hello.result == 'success' }}
-
-          steps:
-            - run: echo 'happy'
