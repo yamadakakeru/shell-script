@@ -1,0 +1,8 @@
+name: sample3
+
+on: push
+jobs:
+    work:
+      runs-on: self-hosted
+steps:
+  - run: echo 'happy'
