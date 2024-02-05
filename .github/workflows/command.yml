@@ -1,21 +1,9 @@
 name: command
-on: [push]
-jobs:
-  command:
-    name: Use Linux commands
-    runs-on: ubuntu-latest
-    steps:
-      - name: Show ubuntu details
-        run: lsb_release -a
-      - name: Inspect files before checkout
-        run: ls -la
-      - name: show current directory before checkout
-        run: pwd
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Inspect files after checkout
-        run: ls -la
-      - name:  show current directory after checkout
-        run: pwd
-      - name: show all branches after checkout
-        run: git branch -a
+on:
+  pull_request:
+
+    jobs:
+      test:
+        runs-on: ubuntu-latest
+        steps:
+          - run: ls -la
