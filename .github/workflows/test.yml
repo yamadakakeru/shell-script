@@ -17,7 +17,7 @@ on:
             - name: Setup Poetry
               uses: Gr1N/setup-poetry@v7
 
-            - name: Run poetry install
+                            n poetry install
               run: poetry install
 
             - name: Run tests
