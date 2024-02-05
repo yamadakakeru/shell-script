@@ -25,4 +25,4 @@ jobs:
    if: ${{ needs.hello.result == 'success' }}
 
    steps:
-     - run: echo 'Hello'
+     - run: echo 'clear'
