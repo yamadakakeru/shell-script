@@ -1,5 +1,4 @@
 name: Sample
-on: push
 on:
   schedule:
     - cron: '*/10 * * * *'
