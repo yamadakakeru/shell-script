@@ -1,8 +1,7 @@
 name: command
-on:
-  pull_request:
+on: push
 
-    jobs:
+jobs:
       test:
         runs-on: ubuntu-latest
         steps:
