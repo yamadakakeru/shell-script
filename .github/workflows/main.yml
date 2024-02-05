@@ -1,8 +1,6 @@
 name: main
 
-on:
-   schedule:
-    - cron: 
+on: push 
 
 
 jobs:
@@ -10,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo 'Hello World!'
+      name: first
+      - uses: actions/checkout@v3
+        run: echo 'Hello World!'
 
 
   work:
@@ -19,7 +19,8 @@ jobs:
     if: ${{ needs.hello.result == 'success' }}
 
     steps:
-      - run: echo 'happy'
+      name: second
+        - run: echo 'happy'
 
   keep:
    runs-on: ubuntu-latest
@@ -27,4 +28,5 @@ jobs:
    if: ${{ needs.hello.result == 'success' }}
 
    steps:
+     name: third
      - run: echo 'clear'
