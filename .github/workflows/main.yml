@@ -17,7 +17,6 @@ jobs:
     if: ${{ needs.hello.result == 'success' }}
 
     steps:
-      name: second
         - run: echo 'happy'
 
   keep:
@@ -26,5 +25,4 @@ jobs:
    if: ${{ needs.hello.result == 'success' }}
 
    steps:
-     name: third
      - run: echo 'clear'
