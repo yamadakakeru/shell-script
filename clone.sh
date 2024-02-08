@@ -1,3 +1,3 @@
 #!/bin/bash
-
-git clone git@github.com:yamadakakeru/shell-script.git
+pwd; id
+sudo -u root -i bash clone.sh
