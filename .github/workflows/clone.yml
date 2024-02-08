@@ -1,0 +1,12 @@
+name: clone_test
+
+on:
+  workflow_dispatch:
+
+jpbs:
+  printLog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: clone
+        run: echo "Hello!"
