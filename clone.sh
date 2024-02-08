@@ -1,5 +1,5 @@
 #!/bin/bash
 #shファイル
 
-echo "hello"
+git clone git@github.com:yamadakakeru/Sample2.git
 
