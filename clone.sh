@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "hoge"
+
+git clone git@github.com:yamadakakeru/shell-script.git
