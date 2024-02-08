@@ -1,29 +1,8 @@
-
-name: main
-
-on: push 
-
+on: push
 
 jobs:
-  hello:
-    runs-on: ubuntu-latest
+    hello:
+          runs-on: self-hosted
 
-    steps:
-      - run: echo 'Hello World!'
-
-
-  work:
-    runs-on: ubuntu-latest
-    needs: hello
-    if: ${{ needs.hello.result == 'success' }}
-
-    steps:
-        - run: echo 'happy'
-
-  keep:
-   runs-on: ubuntu-latest
-   needs: work
-   if: ${{ needs.hello.result == 'success' }}
-
-   steps:
-     - run: echo 'clear'
+                steps:
+                        - run: echo 'Hello World!'
