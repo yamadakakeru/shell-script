@@ -1,7 +1,5 @@
 name: Sample
-on:
-  schedule:
-    - cron: '*/2 * * * *'
+on: push
 
 jobs:
   test:
