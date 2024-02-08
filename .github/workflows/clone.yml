@@ -2,12 +2,14 @@ name: clone_test
 
 on:
   workflow_dispatch:
-
+permissions:
+  contents: write
 jobs:
     build:
         name: build
         runs-on: ubuntu-latest
         steps:
+            - name: Check out this repo
             - uses: actions/checkout@v2
             - name: clone sh
               run: sh ./clone.sh    
