@@ -3,10 +3,11 @@ name: clone_test
 on:
   workflow_dispatch:
 
-jpbs:
+jobs:
   printLog:
     runs-on: ubuntu-latest
 
     steps:
-      - name: clone
-        run: echo "Hello!"
+    - name: clone
+      run: echo "Hello!"
+
