@@ -4,11 +4,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  clone_test:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: clone
-      run: sh ./.github/clone.sh
+    build:
+        name: build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: clone sh
+              run: sh ./.github/clone.sh    
+    
+    
+    
+    
+    
+    
+    
+    
 
