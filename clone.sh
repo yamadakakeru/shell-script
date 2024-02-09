@@ -1,5 +1,7 @@
 #!/bin/bash
 #shファイル
 
-git clone git@github.com:yamadakakeru/Sample.git  
+#ファイルをcloneする
+curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
+#cloneしてきたファイルを実行
 
