@@ -12,4 +12,4 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: clone sh
-              run: sh ./clone.sh   
+               run: ./clone.sh   
