@@ -7,8 +7,8 @@ on:
 
 jobs:
     build:
-        name: build
-        runs-on: self-hosted
+        name: clone
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
             - name: clone sh
