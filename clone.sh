@@ -2,6 +2,6 @@
 #shファイル
 
 #ファイルをcloneする
-git clone git@github.com:yamadakakeru/docker.git /home/yamadakekru
+git clone git@github.com:yamadakakeru/docker.git 
 #cloneしてきたファイルを実行
 
