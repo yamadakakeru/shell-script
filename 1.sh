@@ -1,3 +1,2 @@
 #!/bin/bash
-
-vi clone.sh
+./test.sh
