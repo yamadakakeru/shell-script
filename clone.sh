@@ -4,4 +4,4 @@
 #ファイルをcloneする
 git clone git@github.com:yamadakakeru/docker2.git 
 #cloneしてきたファイルを実行
-sh ./1.shh
+sh ./1.sh
