@@ -9,7 +9,7 @@ on:
 # JOB
 jobs:
   artifact-sample:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       # 成果用としてアップロードするファイルを作成
       - name: artifact output
