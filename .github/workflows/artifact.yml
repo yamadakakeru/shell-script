@@ -2,8 +2,7 @@
 name: upload-artifact-sample
 
 on:
-  # 発動条件 ボタンを押下した時
-  push:
+  # 発動条件 Webボタンを押下した時
     workflow_dispatch:
 
 # JOB
